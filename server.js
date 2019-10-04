@@ -10,19 +10,22 @@ const handle = app.getRequestHandler();
     await app.prepare();
     const server = express();
 
-    server.get('/', (req, res) => {
-        res.redirect('/search');
+    server.get('/', (req, res) => res.redirect('/user'));
+
+    server.get('/user', (req, res) =>
+        app.render(req, res, '/user', { something: 5 })
+    );
+
+    server.get('/api/getUser', (req, res) => {
+        const user = {
+            id: 2,
+            username: 'Roma',
+            password: 'epam super'
+        };
+        res.json({ user });
     });
 
-    server.get('/search', (req, res) => app.render(req, res, '/search'));
-
-    server.get('/movies/:id', (req, res) => {
-        return app.render(req, res, '/movies', { id: req.params.id });
-    });
-
-    server.get('*', (req, res) => {
-        return handle(req, res);
-    });
+    server.get('*', (req, res) => handle(req, res));
 
     server.listen(port, err => {
         if (err) throw err;

@@ -2,7 +2,6 @@ import produce from 'immer';
 import {
     FETCH_USER_SUCCESS,
     FETCH_USER_ERROR,
-    SET_USERNAME
 } from 'constants.ts';
 import { User } from 'types/index'
 
@@ -26,10 +25,6 @@ export const user = (state = initialState, action): UserState => {
             }
             case FETCH_USER_ERROR: {
                 draft.error = action.payload.error;
-                break;
-            }
-            case SET_USERNAME: {
-                draft.user.username = action.payload.username;
                 break;
             }
             default: {

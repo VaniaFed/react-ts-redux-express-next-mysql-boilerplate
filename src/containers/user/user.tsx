@@ -11,7 +11,8 @@ export const User = ({ match }) => {
     const handleClick = () => {
         dispatch(actions.fetchUserRequest())
     }
-    console.log(match)
+
+    console.log(match);
 
     return (
         <div>

@@ -6,7 +6,7 @@ import fetch from 'node-fetch';
 import _ from 'lodash';
 
 const httpLink = createHttpLink({
-    uri: '/getUser',
+    uri: '/api/',
     useGETForQueries: true,
     fetch
 });
@@ -21,7 +21,7 @@ export const httpClient = () => new ApolloClient({
 });
 
 const restLink = () => new RestLink({
-    uri: '/getUser'
+    uri: '/api/'
 });
 
 export const restClient = () => {
