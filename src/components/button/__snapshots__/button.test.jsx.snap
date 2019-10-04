@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> should be rendered with text "Hello, React!" 1`] = `
+<button
+  className="button"
+  data-button="search-page__button-search"
+  type="button"
+>
+  Hello, React!
+</button>
+`;

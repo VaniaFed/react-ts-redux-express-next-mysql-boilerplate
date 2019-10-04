@@ -1,0 +1,85 @@
+{
+    "include": [
+        "next-env.d.ts",
+        "**/*.ts",
+        "**/*.tsx",
+        "**/*.js",
+        "**/*.jsx"
+    ],
+    "compilerOptions": {
+        "target": "es6",
+        "jsx": "react",
+        "module": "esnext",
+        "lib": [
+            "dom",
+            "dom.iterable",
+            "esnext"
+        ],
+        "allowJs": true,
+        "skipLibCheck": true,
+        "strict": false,
+        "forceConsistentCasingInFileNames": true,
+        "noEmit": true,
+        "esModuleInterop": true,
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "isolatedModules": false,
+        "outDir": "./dist/",
+        "sourceMap": true,
+        "noImplicitAny": true,
+        "baseUrl": ".",
+        "typeRoots": [
+            "types"
+        ],
+        "types": [
+            "node"
+        ],
+        "paths": {
+            "src/*": [
+                "./src/*"
+            ],
+            "components/*": [
+                "./src/components/*"
+            ],
+            "containers/*": [
+                "./src/containers/*"
+            ],
+            "static/*": [
+                "./static/*"
+            ],
+            "actions/*": [
+                "./src/actions/*"
+            ],
+            "reducers/*": [
+                "./src/reducers/*"
+            ],
+            "selectors/*": [
+                "./src/selectors/*"
+            ],
+            "types/*": [
+                "./src/types/*"
+            ],
+            "utils/*": [
+                "./src/utils/*"
+            ],
+            "lib/*": [
+                "./src/lib/*"
+            ],
+            "services/*": [
+                "./src/services/*"
+            ],
+            "sagas/*": [
+                "./src/sagas/*"
+            ],
+            "_vars.scss": [
+                "./src/_vars.scss"
+            ],
+            "constants": [
+                "./src/constants"
+            ]
+        }
+    },
+    "exclude": [
+        "node_modules"
+    ],
+}

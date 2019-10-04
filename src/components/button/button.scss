@@ -1,0 +1,13 @@
+@import '~_vars.scss';
+.button {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 8px 20px;
+    border: none;
+    background: $accent-color;
+    color: #fff;
+    cursor: pointer;
+    &:focus {
+        outline: none;
+    }
+}

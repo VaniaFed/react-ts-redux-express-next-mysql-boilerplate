@@ -1,0 +1,32 @@
+@import '~_vars.scss';
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+body {
+    background: #fff;
+    color: #333;
+    font: 16px/1.5 Roboto, Arial, sans-serif;
+}
+
+img {
+    width: 100%;
+}
+header,
+footer {
+    background: #333;
+    padding: 20px 40px;
+}
+
+.container {
+    max-width: 1020px;
+    width: 100%;
+    margin: 0 auto;
+}
