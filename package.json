@@ -8,9 +8,9 @@
         "test:cov": "jest --coverage --testPathPattern=test.js",
         "test:spec": "jest --testPathPattern=spec.js --runInBand",
         "lint": "eslint . --ext .ts,.tsx",
-        "next:dev": "node server.js",
+        "next:dev": "node server/",
         "next:build": "next build",
-        "next:start": "cross-env NODE_ENV=production node server.js"
+        "next:start": "cross-env NODE_ENV=production node server/"
     },
     "devDependencies": {
         "@babel/core": "^7.5.4",
