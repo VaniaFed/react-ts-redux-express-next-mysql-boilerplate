@@ -98,7 +98,7 @@
         "graphql-tag": "^2.10.1",
         "html-webpack-plugin": "^3.2.0",
         "immer": "^4.0.0",
-        "lodash": "^4.17.15",
+        "lodash": "^4.17.21",
         "mysql": "^2.17.1",
         "next": "8.1.0",
         "next-apollo": "^3.0.3",
